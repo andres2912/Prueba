@@ -18,7 +18,11 @@ public class NumerosController {
 
 	@GetMapping("/{numero}")
 	public ResponseEntity<String> validacionNumero(@PathVariable Integer numero) {
-		return new ResponseEntity<>(numerosService.validacionNumero(numero), HttpStatus.OK);
+		try {
+			return new ResponseEntity<>(numerosService.validacionNumero(numero), HttpStatus.OK);
+		} catch (IllegalArgumentException e) {
+			return ResponseEntity.badRequest().body(e.getLocalizedMessage());
+		}
 	}
 
 }

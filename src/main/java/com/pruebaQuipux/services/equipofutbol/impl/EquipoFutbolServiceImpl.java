@@ -30,6 +30,9 @@ public class EquipoFutbolServiceImpl implements EquipoFutbolService {
 
 	@Override
 	public ReporteBasicoDTO reporteBasico() {
+		if (equipoEntity == null) {
+			throw new IllegalStateException(MensajesErrorEquipo.EQUIPO_NO_CREADO);
+		}
 		Integer cantidadJugadores = equipoEntity.getJugadoresTitulares().size()
 				+ equipoEntity.getJugadoresSuplentes().size();
 		return new ReporteBasicoDTO(equipoEntity.getNombreEquipo(), equipoEntity.getCantidadTitulos(),
@@ -39,6 +42,9 @@ public class EquipoFutbolServiceImpl implements EquipoFutbolService {
 
 	@Override
 	public ReporteDetalladoDTO reporteDetallado() {
+		if (equipoEntity == null) {
+			throw new IllegalStateException(MensajesErrorEquipo.EQUIPO_NO_CREADO);
+		}
 		List<String> jugadoresTitulares = equipoEntity.getJugadoresTitulares().stream()
 				.map(jugador -> jugador.getNombreJugador() + " - " + jugador.getPosicion())
 				.collect(Collectors.toList());

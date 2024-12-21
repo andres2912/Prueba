@@ -176,3 +176,4 @@ Respuesta:
 ### Mensajes de Error:
  - "El número de títulos debe ser un valor entero positivo."
  - "Las listas de jugadores no pueden estar vacías."
+ - "El equipo no ha sido creado aún. No se puede generar el reporte."

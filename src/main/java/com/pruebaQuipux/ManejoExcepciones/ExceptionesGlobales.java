@@ -1,4 +1,4 @@
-package com.pruebaQuipux.ManejoExcepciones;
+package com.pruebaQuipux.manejoexcepciones;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,12 +1,13 @@
-package com.pruebaQuipux.services.impl.numeros;
+package com.pruebaQuipux.services.numeros.impl;
 
 import org.springframework.stereotype.Service;
 
 import com.pruebaQuipux.services.numeros.NumerosService;
-import com.pruebaQuipux.utils.MensajesNumeros;
+import com.pruebaQuipux.utils.numeros.MensajesNumeros;
 
 @Service
 public class NumerosServiceImpl implements NumerosService {
+
 	@Override
 	public String validacionNumero(Integer numero) {
 		if (numero >= 1 && numero <= 100) {

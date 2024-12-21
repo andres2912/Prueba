@@ -1,4 +1,4 @@
-package com.pruebaQuipux.utils;
+package com.pruebaQuipux.utils.numeros;
 
 public class MensajesNumeros {
 

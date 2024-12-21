@@ -1,4 +1,4 @@
-package com.pruebaQuipux.services.impl.reloj;
+package com.pruebaQuipux.services.reloj.impl;
 
 import org.springframework.stereotype.Service;
 
@@ -28,5 +28,4 @@ public class RelojServiceImpl implements RelojService {
 			return horaEnPalabras + HorasReloj.Y + minutosEnPalabras;
 		}
 	}
-
 }

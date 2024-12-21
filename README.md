@@ -8,7 +8,7 @@ Para clonar el repositorio:
 2. Ejecute el siguiente comando en su terminal o consola de comandos:
 
 ```bash
-git clone https://git.quipux.com/beta/identificacionrutasinformales.git
+git clone https://github.com/andres2912/Prueba.git
 cd prueba
 
 ```
